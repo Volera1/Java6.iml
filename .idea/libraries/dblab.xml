@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dblab">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../dblab" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
