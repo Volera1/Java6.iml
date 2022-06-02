@@ -231,20 +231,8 @@ public class DBwork {
         return 0;
     }
 
-    public static int getDeviceID(String name) throws SQLException {
-        Statement statement = connection.createStatement();
-        ResultSet result = statement.executeQuery("select * FROM DeviceTypes");
-        while (result.next()) {
-            if (name.compareTo(result.getString(2)) == 0) {
-                return result.getInt(1);
-            }
-        }
-        statement.close();
-        return 0;
-    }
-
     public static HashMap<String,Integer> StringToHashMap(String map) {
-        HashMap<String,Integer> newMap=new HashMap<String,Integer>();
+        HashMap<String,Integer> newMap=new HashMap<>();
         String[] keyCount=map.split(",");
         for(String pair :keyCount){
             pair=pair.trim();
